@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfficeMate - Modern Productivity Tools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="assets/logo.svg">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-blur-1"></div>
+    <div class="bg-blur-2"></div>
+    
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="logo-container">
+            <img src="assets/logo.svg" alt="OfficeMate" class="logo-hover">
+            <h1>OfficeMate</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Tools</a></li>
+                <li><a href="#" class="nav-link">Features</a></li>
+                <li><a href="#" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <button class="btn-login" id="authBtn">Sign In</button>
+            <button class="btn-primary btn-glow">Get Started</button>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Your All-in-One <span class="text-gradient">Productivity</span> Suite</h2>
+            <p class="hero-subtitle">86 powerful tools to streamline your workflow and boost efficiency</p>
+            <div class="hero-cta">
+                <button class="btn-primary btn-glow btn-pulse">Start Exploring</button>
+                <button class="btn-secondary btn-hover-effect">Watch Demo <i class="fas fa-play"></i></button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="tool-card-preview floating">
+                <div class="tool-card-header">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>PDF Tools</h3>
+                </div>
+                <div class="tool-card-body">
+                    <p>Convert, merge, compress and more</p>
+                </div>
+            </div>
+            <div class="tool-card-preview floating delay-1">
+                <div class="tool-card-header">
+                    <i class="fas fa-image"></i>
+                    <h3>Image Tools</h3>
+                </div>
+                <div class="tool-card-body">
+                    <p>Edit, convert and optimize images</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid Section -->
+    <section class="tools-section">
+        <div class="section-header">
+            <h3>Explore Our Tools</h3>
+            <div class="search-filter">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search tools..." id="searchInput">
+                </div>
+                <div class="filter-dropdown">
+                    <span>All Categories</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tools-grid" id="toolsContainer">
+            <!-- Tool cards will be dynamically inserted here -->
+        </div>
+        
+        <div class="section-footer">
+            <button class="btn-load-more">
+                Load More
+                <div class="loading-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="feature-card slide-up">
+            <div class="feature-icon">
+                <i class="fas fa-bolt"></i>
+            </div>
+            <h4>Lightning Fast</h4>
+            <p>Process files in seconds with our optimized algorithms</p>
+        </div>
+        <div class="feature-card slide-up delay-1">
+            <div class="feature-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <h4>Secure Processing</h4>
+            <p>All files processed in your browser - nothing uploaded</p>
+        </div>
+        <div class="feature-card slide-up delay-2">
+            <div class="feature-icon">
+                <i class="fas fa-infinity"></i>
+            </div>
+            <h4>No Limits</h4>
+            <p>Unlimited usage with no file size restrictions</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo-white.svg" alt="OfficeMate">
+                <p>Making office work effortless</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h5>Product</h5>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Changelog</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h5>Resources</h5>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h5>Stay Updated</h5>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="Your email">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 OfficeMate. All rights reserved.</p>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div class="auth-modal-overlay" id="authModal">
+        <div class="auth-card">
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="signup">Sign Up</button>
+                <button class="close-auth">&times;</button>
+            </div>
+            
+            <div class="auth-content">
+                <!-- Login Card -->
+                <div class="auth-form active" id="loginForm">
+                    <div class="social-login">
+                        <button class="social-btn google" id="googleLogin">
+                            <img src="assets/icons/google.svg" alt="Google"> Continue with Google
+                        </button>
+                        <button class="social-btn facebook" id="facebookLogin">
+                            <img src="assets/icons/facebook.svg" alt="Facebook"> Continue with Facebook
+                        </button>
+                    </div>
+                    
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" placeholder="your@email.com">
+                        <div class="error-message" id="loginEmailError"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="loginPassword">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="loginPassword" placeholder="••••••••">
+                            <button class="toggle-password" type="button">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="error-message" id="loginPasswordError"></div>
+                    </div>
+                    <div class="login-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="rememberMe">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                    <button class="btn btn-primary auth-btn" id="loginBtn">Login</button>
+                </div>
+                
+                <!-- Signup Card -->
+                <div class="auth-form" id="signupForm">
+                    <div class="input-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" placeholder="John Doe">
+                        <div class="error-message" id="signupNameError"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" placeholder="your@email.com">
+                        <div class="error-message" id="signupEmailError"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="signupPassword">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="signupPassword" placeholder="••••••••">
+                            <button class="toggle-password" type="button">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength" id="passwordStrength">
+                            <div class="strength-meter">
+                                <div class="strength-bar"></div>
+                            </div>
+                            <div class="strength-text">Weak</div>
+                        </div>
+                        <div class="error-message" id="signupPasswordError"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="signupConfirm">Confirm Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="signupConfirm" placeholder="••••••••">
+                            <button class="toggle-password" type="button">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="error-message" id="signupConfirmError"></div>
+                    </div>
+                    <div class="terms-agreement">
+                        <input type="checkbox" id="agreeTerms">
+                        <label for="agreeTerms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <button class="btn btn-primary auth-btn" id="signupBtn">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tool Modal -->
+    <div class="tool-modal-overlay" id="toolModal">
+        <div class="tool-modal-container">
+            <div class="tool-modal-header">
+                <h3 id="toolModalTitle">Tool Name</h3>
+                <button class="close-tool-modal">&times;</button>
+            </div>
+            <div class="tool-modal-content" id="toolModalContent">
+                <!-- Tool content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/tools/pdf-tools.js"></script>
+    <script src="js/tools/file-tools.js"></script>
+    <script src="js/tools/image-tools.js"></script>
+    <script src="js/tools/text-tools.js"></script>
+    <script src="js/tools/audio-tools.js"></script>
+    <script src="js/tools/video-tools.js"></script>
+    <script src="js/tools/office-utils.js"></script>
+    <script src="js/tools/other-tools.js"></script>
+</body>
+                             </html>
